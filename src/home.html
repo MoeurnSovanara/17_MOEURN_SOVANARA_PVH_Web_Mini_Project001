@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Web Mini Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+<body>
+  <header class="flex w-full font-[Poppins]">
+    <nav class=" fixed z-20 w-[100%]  bg-[#232536] border border-b-blue-950">
+        <div class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
+            <div class="flex items-center justify-between">
+                <a href="#">
+                    <img class="w-auto h-6 sm:h-6" src="/images/Logo.png" alt="">
+                </a>
+            </div>
+            <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ">
+                <div class="flex flex-col md:flex-row md:mx-6">
+                    <a class="my-2 text-gray-200 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="home.html">Home</a>
+                    <a class="my-2 text-gray-200 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0 opacity-70" href="service.html">Service</a>
+                    <a class="my-2 text-gray-200 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0 opacity-70" href="company.html">Company</a>
+                    <a class="my-2 text-gray-200 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0 opacity-70" href="career.html">Career</a>
+                    <a class="my-2 text-gray-200 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0 opacity-70" href="#">Blog</a>
+                    <a class="my-2 text-gray-200 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0 opacity-70" href="#">Contact Us</a>
+                    <a class="my-2 text-amber-100 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">Clone project</a>
+                    <a class="relative text-gray-500 transition-colors duration-300 transform dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-300" href="#">
+                        <i class="fa-solid fa-arrow-right my-2 text-gray-200 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-0 md:my-0"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+      </nav>
+    </header>
+    
+    <section class="section1 bg-[#232536] mt-[55px] font-[Poppins] w-full">
+      <div class=" mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8 mt-[50px]">
+          <div >
+            <div class="max-w-lg md:max-w-none">
+              <div class="w-4 h-4 bg-[#FFFFFF0F] absolute top-50"></div>
+              <h1 class=" text-[#FFFFFF] text-[56px] font-[600] leading-18">
+                Transform Your Idea Into Reality with Finsweet
+              </h1>
+    
+              <p class="mt-4 text-[#FFFFFF] opacity-[60%] text-[16px] font-[400]">
+                The entire Finsweet team knows what's good with Webflow and you can too with 1 week and a good attitude.
+              </p>
+              <button class="w-[200px] h-[55px] text-[#FFFFFF] bg-[#444CFC] mt-[50px] relative p-8">
+                <img class="mt-[-32px] ml-[-32px]" src="../images/button-corner-shapes.svg" alt="">
+                <a href="" class="absolute inset-5 mx-[1px] text-[16px] font-[500]">Request Quote <i class="fa-solid fa-arrow-right mx-[10px]"></i></a>
+              </button>
+            </div>
+          </div>
+    
+          <div>
+            <img
+              src="/images/Image1firstsection.png"
+              class="place-self-end h-[632px] w-[500px] z-10 relative me-8"
+              alt=""
+            />
+            <img class="absolute top-36 mt-[-7px] right-25" src="../images/item1-section1.png" alt="">
+            <img class="absolute right-[617px] top-[666px]" src="../images/line-smallShape-home.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="logo-cart mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8 flex justify-between items-center">
+        <div class="logo1 text-[#FFFF]">
+          <p class="opacity-[60%] text-[500] text-[14px]">Our Clients</p>
+          <h1 class="text-[#FFFF] text-[18px]">We've Worked with</h1>
+        </div>
+        <div class="logo2">
+          <img src="../images/Logo1.svg" alt="">
+        </div>
+        <div class="logo3">
+          <img src="../images/Logo2.svg" alt="">
+        </div>
+        <div class="logo4">
+          <img src="../images/Logo3.svg" alt="">
+        </div>
+        <div class="logo5">
+          <img src="../images/Logo4.svg" alt="">
+        </div>
+        <div class="logo6">
+          <img src="../images/Logo5.svg" alt="">
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="section2 font-[Poppins] w-full">
+      <section class="Title mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8 bg-[#FFFF] mt-[50px] flex">
+        <div>
+          <p class="opacity-[80%] tracking-[2px] text-[14px]">ABOUT US</p>
+          <h1 class="text-[#232536] text-[48px] font-[600] mt-[10px] pr-5">The company lead entire webdesign process from concept to delivery.</h1>
+        </div>
+        <div>
+          <h2 class="text-[#232536] text-[36px] font-[600] mt-[50px]">
+            The Era Of Technology.
+          </h2>
+          <p class="text-[16px] text-[#5D5F6D] mt-[10px] font-[400] leading-7">
+            Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. 
+          </p>
+        </div>
+      </section>
+      <section class="image-cart mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8 bg-[#FFFF] grid grid-cols-3 flex-row gap-2 items-center">
+          <img src="../images/image-cart1.svg" class="h-[446px]" alt="">
+          <img src="../images/image-cart2.svg" class="h-[446px]"  alt="">
+          <img src="../images/image-cart3.svg" class="h-[425px]"  alt="">
+          <img src="../images/stand-line.svg" class="absolute right-[100px] top-[1430px]" alt="">
+      </section>
+      <section class="flex justify-between mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8 items-center bg-[#FFFF]">
+          <div class="flex w-[50%] justify-between">
+              <div>
+                  <h1 class="text-[36px] font-[600] text-[#232536]">1560+</h1>
+                  <img class="w-[72px] h-[5px] " src="../images/number-image.svg" alt="">
+                  <p class="text-[16px] mt-1 font-[400]">Project Delivered</p>
+              </div>
+              <div>
+                  <h1 class="text-[36px] font-[600] text-[#232536]">100+</h1>
+                  <img class="w-[72px] h-[5px] mt-1" src="../images/number-image.svg" alt="">
+                  <p class="text-[16px] mt-1 font-[400]">Professional</p>
+              </div>
+              <div>
+                  <h1 class="text-[36px] font-[600] text-[#232536]">950+</h1>
+                  <img class="w-[72px] h-[5px] mt-1" src="../images/number-image.svg" alt="">
+                  <p class="text-[16px] mt-1 font-[400]">Happy Client</p>
+              </div>
+              <div>
+                  <h1 class="text-[36px] font-[600] text-[#232536]">10 yrs</h1>
+                  <img class="w-[72px] h-[5px] mt-1" src="../images/number-image.svg" alt="">
+                  <p class="text-[16px] mt-1 font-[400]">Experience</p>
+              </div>
+          </div>
+          <div >
+              <a class="text-[16px] text-[#444CFC] font-[500]" href="">Read about us</a> <img class="inline-block" src="../images/Arrow-right-icon.svg" alt="">
+          </div>
+      </section>
+    </section>
+
+    <section class="section3 w-full font-[Poppins] bg-[#ECF8F9] py-20">
+      <div class=" mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+        <div class="flex">
+          <div class="w-[65%] pr-[100px]">
+            <div class="max-w-lg md:max-w-none mt-5 font-[500]">
+              <p class="opacity-[87%] text-[14px] font-[500] tracking-[2px]">
+                OUR EXPERIENCE
+              </p>
+              <h1 class=" text-[48px] mt-2 font-[600] leading-15 text-[#232536]">
+                We want to get local identification in every corner of the world in this era of global citizenship
+              </h1>
+              <p class="mt-4 text-[#5D5F6D] text-[16px]">
+                Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. 
+              </p>
+            </div>
+          </div>
+    
+          <div class="flex flex-col justify-between w-[35%]">
+            <div class="w-4 h-4 bg-[#444CFC]"> </div>
+            <div class="h-full flex flex-col justify-between">
+              <div class="flex gap-5 bg-white p-6">
+                <img src="../images/expertise1.svg" alt="">
+                <div class="text">
+                  <h1 class="text-[16px] font-[600] text-black">
+                    On Time Delivery
+                  </h1>
+                  <p class="font-[500] text-[14px] text-[#5D5F6D]">
+                    Through True Rich Attended does no end it his mother since real had half every him.
+                  </p>
+                </div>
+              </div>
+  
+              <div class="flex gap-5 bg-white p-6">
+                <img src="../images/expertise2.svg" alt="">
+                <div class="text">
+                  <h1 class="text-[16px] font-[600] text-black">
+                    Best Quality
+                  </h1>
+                  <p class="font-[500] text-[14px] text-[#5D5F6D]">
+                    Through True Rich Attended does no end it his mother since real had half every him.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-5 bg-white p-6">
+                <img src="../images/expertise3.svg" alt="">
+                <div class="text">
+                  <h1 class="font-[500] text-[14px] text-[#5D5F6D]">
+                    Support Assist
+                  </h1>
+                  <p class="font-[500] text-[14px] text-[#5D5F6D]">
+                    Through True Rich Attended does no end it his mother since real had half every him.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <img src="../images/expertise-image.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section4 bg-[#FFE6D2] w-full font-[Poppins]">
+      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+        <div class="max-w-lg md:max-w-none mt-14 w-[60%]">
+          <p class="opacity-[87%] text-[14px] font-[500] tracking-[2px]">
+            OUR SERVICES
+          </p>
+          <h1 class="text-[48px] font-[600] leading-15 mt-4 text-[#232536]">
+            We build software solutions that solve client's business challenges
+          </h1>
+          <button class="w-[200px] h-[55px] text-[#FFFFFF] bg-[#444CFC] mt-[50px] relative p-8">
+            <img class="mt-[-32px] ml-[-32px]" src="../images/button-corner-shapes.svg" alt="">
+            <a href="" class="absolute inset-5 mx-[1px] text-[16px] font-[500]">Start a Project <i class="fa-solid fa-arrow-right mx-[10px]"></i></a>
+          </button>
+        </div>
+  
+        <div class="grid grid-cols-3 items-center gap-6 mt-20 mb-10">
+          <div class="bg-white py-10 px-12 shadow-2xl">
+            <img src="../images/section4-icon1.svg" alt="">
+            <h1 class="text-[16px] font-[600] mt-4">
+              Technical support
+            </h1>
+            <p class="mt-2 text-[16px] text-[#5D5F6D] font-[400]">We aim to attain the greatest satisfaction for our clients and be one of the prominent names when it comes to world-class service</p>
+            <br>
+            <a class="text-[16px] text-[#444CFC] font-[500] opacity-[87%]" href="">Read about us</a> <img class="inline-block" src="../images/Arrow-right-icon.svg" alt="">
+          </div>
+
+          <div class="bg-white py-10 px-12 shadow-2xl">
+            <img src="../images/section4-icon2.svg" alt="">
+            <h1 class="text-[16px] font-[600] mt-4">
+              Testing Management
+            </h1>
+            <p class="mt-2 text-[16px] text-[#5D5F6D] font-[400]">We aim to attain the greatest satisfaction for our clients and be one of the prominent names when it comes to world-class service</p>
+            <br>
+            <a class="text-[16px] text-[#444CFC] font-[500] opacity-[87%]" href="">Read about us</a> <img class="inline-block" src="../images/Arrow-right-icon.svg" alt="">
+          </div>
+
+          <div class="bg-white py-10 px-12 shadow-2xl">
+            <img src="../images/section4-cart3.svg" alt="">
+            <h1 class="text-[16px] font-[600] mt-4">
+              Technical support
+            </h1>
+            <p class="mt-2 text-[16px] text-[#5D5F6D] font-[400]">We aim to attain the greatest satisfaction for our clients and be one of the prominent names when it comes to world-class service</p>
+            <br>
+            <a class="text-[16px] text-[#444CFC] font-[500] opacity-[87%]" href="">Read about us</a> <img class="inline-block" src="../images/Arrow-right-icon.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section5 bg-white w-full font-[Poppins]">
+      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+        <div class="max-w-lg md:max-w-none mt-14 w-[60%]">
+          <p class="opacity-[87%] text-[14px] font-[500] tracking-[2px]">
+            OUR PROCESS
+          </p>
+          <h1 class="text-[48px] font-[600] leading-15 mt-4 text-[#232536]">
+            The process we are working With Our client Worldwide
+          </h1>
+          <p class="text-[#232536] opacity-[87%] mt-4 text-[16px] font-[400]">Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable.</p>
+        </div>
+        <div class="grid grid-cols-3 h-96 mt-16 gap-10">
+          <div class="gap-2 border border-pink-200 p-5 pr-10">
+            <div class="flex relative gap-2">
+              <h1 class="absolute right-[-25px] top-[-10px] block text-[24px] font-[600] text-[#232536] opacity-20">01</h1>
+              <img class="w-10 h-10 rounded-full bg-[#FFD3AF2B] p-2" src="../images/home-ourprocess-icon1.svg" alt="">
+              <div>
+                <h1 class="text-[16px] font-[600] text-black">
+                  Discover
+                </h1>
+                <p class="opacity-[60%] text-[16px] font-[400] text-[#232536] mt-2">
+                  We aim to attain the greatest satisfaction for our clients and be one of the prominent.
+                </p>
+              </div>
+            </div>
+            <div class="mt-10 mx-[-22px] bg-amber-300 absolute w-[380px]">
+              <img src="../images/expertise-image.svg" class="w-ful" alt="">
+            </div>
+          </div>
+
+          <div class="gap-2 border border-pink-200 p-5 pr-10">
+            <div class="flex relative gap-2">
+              <h1 class="absolute right-[-25px] top-[-10px] block text-[24px] font-[600] text-[#232536] opacity-20">02</h1>
+              <img class="w-10 h-10 rounded-full bg-[#FFD3AF2B] p-2" src="../images/home-ourprocess-icon2.svg" alt="">
+              <div>
+                <h1 class="text-[16px] font-[600] text-black">
+                  Designing
+                </h1>
+                <p class="opacity-[60%] text-[16px] font-[400] text-[#232536] mt-2">
+                  We aim to attain the greatest satisfaction for our clients and be one of the prominent.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gap-2 border border-pink-200 p-5 pr-10">
+            <div class="flex relative gap-2">
+              <h1 class="absolute right-[-25px] top-[-10px] block text-[24px] font-[600] text-[#232536] opacity-20">03</h1>
+              <img class="w-10 h-10 rounded-full bg-[#FFD3AF2B] p-2" src="../images/home-ourprocess-icon3.svg" alt="">
+              <div>
+                <h1 class="text-[16px] font-[600] text-black">
+                  Development
+                </h1>
+                <p class="opacity-[60%] text-[16px] font-[400] text-[#232536] mt-2">
+                  We aim to attain the greatest satisfaction for our clients and be one of the prominent.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gap-2 border border-pink-200 p-5 pr-10">
+            <div class="flex relative gap-2">
+              <h1 class="absolute right-[-25px] top-[-10px] block text-[24px] font-[600] text-[#232536] opacity-20">04</h1>
+              <img class="w-10 h-10 rounded-full bg-[#FFD3AF2B] p-2" src="../images/home-ourprocess-icon4.svg" alt="">
+              <div>
+                <h1 class="text-[16px] font-[600] text-black">
+                  Testing
+                </h1>
+                <p class="opacity-[60%] text-[16px] font-[400] text-[#232536] mt-2">
+                  We aim to attain the greatest satisfaction for our clients and be one of the prominent.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gap-2 border border-pink-200 p-5 pr-10">
+            <div class="flex relative gap-2">
+              <h1 class="absolute right-[-25px] top-[-10px] block text-[24px] font-[600] text-[#232536] opacity-20">05</h1>
+              <img class="w-10 h-10 rounded-full bg-[#FFD3AF2B] p-2" src="../images/home-ourprocess-icon5.svg" alt="">
+              <div>
+                <h1 class="text-[16px] font-[600] text-black">
+                  Deployment
+                </h1>
+                <p class="opacity-[60%] text-[16px] font-[400] text-[#232536] mt-2">
+                  We aim to attain the greatest satisfaction for our clients and be one of the prominent.
+                </p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="gap-2 border border-pink-200 p-5 pr-10">
+            <div class="mt-[-26px] mx-[-22px] bg-amber-300 absolute w-[380px]">
+              <img src="../images/expertise-image.svg" class="w-ful" alt="">
+            </div>
+            <div class="flex relative gap-2">
+              <h1 class="absolute right-[-25px] top-[-10px] block text-[24px] font-[600] text-[#232536] opacity-20">06</h1>
+              <img class="w-10 h-10 rounded-full bg-[#FFD3AF2B] p-2" src="../images/home-ourprocess-icon6.svg" alt="">
+              <div>
+                <h1 class="text-[16px] font-[600] text-black">
+                  Maintenance
+                </h1>
+                <p class="opacity-[60%] text-[16px] font-[400] text-[#232536] mt-2">
+                  We aim to attain the greatest satisfaction for our clients and be one of the prominent.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section6 bg-[#F9F9FF] w-full font-[Poppins] ">
+      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8 grid grid-cols-2 gap-10">
+        <div class="pr-12 pt-12 pb-12">
+          <div class="w-5 h-5 bg-[#666DFF]"></div>
+          <h1 class="text-[48px] font-[600] leading-15 mt-4 text-[#232536]">
+            Our customers love what we do
+          </h1>
+          <p class="text-[18px] mt-3 font-[500] text-[#232536]">Transform your idea into reality with finsweet</>
+          <p class="text-[16px] mt-3 opacity-[87%] font-[400] text-[#232536]">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+          <div class="flex gap-2 mt-4">
+            <div>
+              <img src="../images/profile1-section6.png" alt="">
+            </div>
+            <div>
+              <img src="../images/profile2-section6.png" alt="">
+            </div>
+            <div>
+              <img src="../images/profile3-section6.png" alt="">
+            </div>
+          </div>
+          <p class="text-[12px] font-[500] mt-4"><span class="text-[16px]">30+</span> Customer Reviews</p>
+        </div>
+
+        <div class="p-12">
+          <img class="absolute mx-[-30px] mt-10" src="../images/stand-line.svg" alt="">
+          <img class="place-self-end" src="../images/Quote.svg" alt="">
+          <p class="text-[24px] mt-4 opacity-[87%] p-5 text-[#232536] font-[600]">Finsweet has been a wonderful partner to work with. I have been a customer now for the past few months now and I have had nothing but positive experiences!</p>
+          <div class="flex gap-3 mt-4 justify-between">
+            <div class="flex gap-3">
+              <img src="../images/profile1-section6.png" alt="">
+              <div>
+                <h1 class="font-[600] opacity-[87%] text-[#232536] text-[16px]">Johnny Andro</h1>
+                <p class="opacity-60 text-[14px] text-[#232536] font-[600]">Director, Company</p>
+              </div>
+            </div>
+            <img src="../images/section6-logo.svg" alt="">
+          </div>
+          <img class="place-self-center mt-7" src="../images/Circles-like-slide.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="section7 bg-white font-[Poppins] w-full">
+      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+        <h1 class="text-[48px] font-[600] text-[#232536]">Read our latest blogs & news</h1>
+        <div class="grid grid-cols-2 mt-10">
+          <div class="flex items-center">
+            <img src="../images/section7-image1.png" alt="">
+            <div class="p-10">
+              <p class="text-[14px] opacity-60 font-[500] mb-2 text-[#232536]">Jan 19, 2021</p>
+              <h2 class="text-[24px] font-[600] text-[#232536] mb-5">Today’s best design trends for digital products</h2>
+              <a class="text-[16px] text-[#444CFC] font-[500] opacity-[87%]" href="">Read More</a> <img class="inline-block" src="../images/Arrow-right-icon.svg" alt="">
+            </div>
+          </div>
+
+          <div class="flex items-center">
+            <img src="../images/section7-image2.png" alt="">
+            <div class="p-10">
+              <p class="text-[14px] opacity-60 font-[500] mb-2 text-[#232536]">Jan 19, 2021</p>
+              <h2 class="text-[24px] font-[600] text-[#232536] mb-5">A practical guide to building a brand strategy</h2>
+              <a class="text-[16px] text-[#444CFC] font-[500] opacity-[87%]" href="">Read More</a> <img class="inline-block" src="../images/Arrow-right-icon.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section8 w-full font-[Poppins]">
+      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 items-center max-w-lg md:max-w-none mt-14 bg-[#666DFF]">
+          <div>
+            <img src="../images/cornerShapes.svg" alt="">
+            <div class="px-15 py-5 ">
+              <p class="text-white text-[14px] font-[500] tracking-[2px] mt-[-60px] mx-5">NEWLETTER</p>
+              <h2 class="text-[36px] font-[600] text-white mb-5 ">Subscribe our News Letter to get Latest Updates.</h2>
+            </div>
+          </div>
+          <div class="items-center flex justify-center">
+            <input type="email" placeholder="Paresh@Pixeto.com" class="w-[500px] px-6 bg-white py-4 border  border-transparent text-gray-700 focus:outline-none focus:border-blue-500">
+          </div>
+          <img class="absolute right-20 h-52" src="../images/stand-line.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-white font-[Poppins] w-full">
+      <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+        <div class="flex">
+          <div class="w-[50%]">
+            <div class="text-teal-600">
+              <img src="../images/corner1.svg" alt="">
+            </div>
+            <h1 class="text-[48px] font-[600] text-[#232536] mt-6 leading-14">Let's make something special</h1>
+            <h2 class="mt-5 font-[600] text-[24px] text-[#232536]">Let's talk!🤙</h2>
+            <div class="mt-5">
+              <h1 class="text-[18px] font-[500] text-[#232536]">020 7993 2905</h1>
+              <a href="mailto:info@pixeto.com" class="transition hover:opacity-75 text-[18px] font-[500] text-[#232536]">hi@weblover.com</a>
+            </div>
+            <div class="mt-5 w-[45%] text-[14px] font-[500] text-[#232536]">
+              <p>DLF Cybercity, Bhubaneswar, India, &52050</p>
+            </div>
+          </div>
+    
+          <div class="grid grid-cols-1 place-self-center gap-20 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4 mx-40 me-[-40px]">
+            <div>
+              <ul>
+                <li>
+                  <a class="text-[#232536] transition hover:opacity-75 font-[600] text-[16px] cursor-pointer">Home</a>
+                </li>
+                <li class="mt-4">
+                  <a class="text-[#232536] transition hover:opacity-75 font-[600] text-[16px] cursor-pointer">Service</a>
+                </li>
+                <li class="mt-4">
+                  <a class="text-[#232536] transition hover:opacity-75 font-[600] text-[16px] cursor-pointer">Company</a>
+                </li>
+                <li class="mt-4">
+                  <a class="text-[#232536] transition hover:opacity-75 font-[600] text-[16px] cursor-pointer">Career</a>
+                </li>
+                <li class="mt-4">
+                  <a class="text-[#232536] transition hover:opacity-75 font-[600] text-[16px] cursor-pointer">News</a>
+                </li>
+                
+              </ul>
+              
+            </div>
+    
+            <div>
+              <p class="text-[#232536] transition hover:opacity-75 font-[600] text-[16px] cursor-pointer">Service</p>
+    
+              <ul class="space-y-4 text-sm">
+                <li class="mt-2">
+                  <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> Technical support </a>
+                </li>
+                <li class="mt-2">
+                  <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]">Testing </a>
+                </li>
+                <li class="mt-2">
+                  <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> Development </a>
+                </li>
+                <li class="mt-2">
+                  <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> AWS/Azure </a>
+                </li>
+                <li class="mt-2">
+                  <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> Consulting </a>
+                </li>
+                <li class="absolute">
+                  <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> Information Technology </a>
+                </li>
+              </ul>
+            </div>
+    
+            <div>
+              <p class="text-[#232536] transition hover:opacity-75 font-[600] text-[16px] cursor-pointer">Resources</p>
+    
+              <ul class="space-y-4 text-sm">
+                <li class="mt-2">
+                  <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> About Us </a>
+                </li>
+    
+                <li class="mt-2">
+                  <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]5"> Testimonial </a>
+                </li>
+    
+                <li class="mt-2">
+                  <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> Privacy Policy </a>
+                </li>
+                <li class="mt-2">
+                  <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> Terms of use </a>
+                </li>
+                <li class="mt-2">
+                  <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> Blog </a>
+                </li>
+              </ul>
+            </div>
+            <div class="absolute right-[90px] items-center mt-72">
+              <img class="inline-block me-3" src="../images/endItem.svg" alt=""><a class="font-[Poppins] text-[18px] text-[#444CFC]" href="">Read More</a> <img class="inline-block" src="../images/Arrow-right-icon.svg" alt="">
+            </div>
+          </div>
+        </div> 
+      </div>
+    </footer>
+
+    <footer class="bg-[#FFE6D2] w-full font-[Poppins]">
+      <div class="mx-auto max-w-screen-xl px-2 py-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between">
+          <div class="flex gap-7">
+            <a href="#">
+              <img class="w-auto h-6 sm:h-6" src="/images/Logo.png" alt="">
+            </a>
+            <p class="text-black text[16px] font-[600]">&copy;2021 Finsweet</p>
+          </div>
+          <div class="gap-6 flex">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+      </div>
+      </div>
+    </footer>
+
+</body>
+</html>

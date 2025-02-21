@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Web Mini Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="flex w-full font-[Poppins]">
+      <nav class=" fixed z-20 w-[100%]  bg-[#232536] border border-b-blue-950">
+        <div class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
+          <div class="flex items-center justify-between">
+              <a href="#">
+                  <img class="w-auto h-6 sm:h-6" src="/images/Logo.png" alt="">
+              </a>
+          </div>
+          <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ">
+            <div class="flex flex-col md:flex-row md:mx-6">
+                <a class="my-2 text-gray-200 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0 opacity-70" href="home.html">Home</a>
+                <a class="my-2 text-gray-200 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0 opacity-70" href="service.html">Service</a>
+                <a class="my-2 text-gray-200 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="company.html">Company</a>
+                <a class="my-2 text-gray-200 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0 opacity-70" href="career.html">Career</a>
+                <a class="my-2 text-gray-200 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0 opacity-70" href="#">Blog</a>
+                <a class="my-2 text-gray-200 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0 opacity-70" href="#">Contact Us</a>
+                <a class="my-2 text-amber-100 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">Clone project</a>
+                <a class="relative text-gray-500 transition-colors duration-300 transform dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-300" href="#">
+                    <i class="fa-solid fa-arrow-right my-2 text-gray-200 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-0 md:my-0"></i>
+                </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="section1">
+        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8 bg-[#FFFF] mt-[50px] flex">
+            <div class="w-[60%] mt-16">
+                <div class="w-6 h-6 bg-[#FFD3AF] place-self-start"></div>
+                <p class="opacity-[80%] font-[Poppins] mt-6">COMPANY</p>
+                <h1 class="text-[#232536] font-[Poppins] text-[48px] font-[600] mt-10 leading-15">Award-winning Company seen and used by millions around the world.</h1>
+                <p class="opacity-[80%] font-[Poppins] text-[16px] mt-10">
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The Maker is a decentralized. 
+                </p>
+            </div>
+            <img class="absolute right-30 top-36" src="../images/company-corner1-section1.svg" alt="">
+        </div>
+        <section class="image-cart mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8 bg-[#FFFF] grid grid-cols-3 flex-row gap-2 items-center relative">
+            <img src="../images/image-cart1.svg" class="h-[446px]" alt="">
+            <img src="../images/image-cart2.svg" class="h-[446px]"  alt="">
+            <img src="../images/image-cart3.svg" class="h-[425px] relative z-10"  alt="">
+            <img class="absolute top-4 right-12" src="../images/company-line-Shape.svg" alt="">
+        </section>
+    </section>
+
+    <section class="section2">
+        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8 bg-[#FFFF] mt-[50px] grid grid-cols-2">
+            <div class="w-[90%]">
+                <div class="w-4 h-4 bg-[#444CFC] place-self-start"></div>
+                <h1 class="font-[Poppins] text-[16px] font-[600] mt-4">
+                    Our Story👇
+                </h1>
+                <h1 class="font-[Poppins] text-[40px] font-[600] leading-15 mt-4 text-black">
+                    From Startups to Titans of Industry
+                  </h1>
+                  <p class="text-black opacity-[60%] mt-4 font-[Poppins]">
+                    Through True Rich Attended does no end it his mother since favourable real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense of gay produce excited perceived do an a china mean its so ye when in explained Hearts am next over match mr partiality not shoud latter thus as out no passed forming middleton exercise up
+                  </p>
+            </div>
+
+            <div class="flex mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8 items-center bg-[#FFD3AF91] w-full justify-center">
+                <div class=" items-center grid grid-cols-2 gap-16">
+                    <div>
+                        <h1 class="text-3xl font-[600] font-[Poppins]">1560+</h1>
+                        <img class="w-[72px] h-[5px] mt-1" src="../images/number-image.svg" alt="">
+                        <p class="text-[18px] font-[Poppins] mt-1 opacity-70">Project Delivered</p>
+                    </div>
+                    <div class="number">
+                        <h1 class="text-3xl font-[600] font-[Poppins]">100+</h1>
+                        <img class="w-[72px] h-[5px] mt-1" src="../images/number-image.svg" alt="">
+                        <p class="text-[18px] font-[Poppins] mt-1 opacity-70">Professional</p>
+                    </div>
+                    <div class="number">
+                        <h1 class="text-3xl font-[600] font-[Poppins]">950+</h1>
+                        <img class="w-[72px] h-[5px] mt-1" src="../images/number-image.svg" alt="">
+                        <p class="text-[18px] font-[Poppins] mt-1 opacity-70">Happy Client</p>
+                    </div>
+                    <div class="number">
+                        <h1 class="text-3xl font-[600] font-[Poppins]">10 yrs</h1>
+                        <img class="w-[72px] h-[5px] mt-1" src="../images/number-image.svg" alt="">
+                        <p class="text-[18px] font-[Poppins] mt-1 opacity-70">Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="logo-cart mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8 flex justify-between items-center w-[70%]">
+            <div class="logo2">
+              <img src="../images/company-logo1.svg" alt="">
+            </div>
+            <div class="logo3">
+              <img src="../images/company-logo2.svg" alt="">
+            </div>
+            <div class="logo4">
+              <img src="../images/company-logo3.svg" alt="">
+            </div>
+            <div class="logo5">
+              <img src="../images/company-logo4.svg" alt="">
+            </div>
+            <div class="logo6">
+              <img src="../images/company-logo5.svg" alt="">
+            </div>
+          </div>
+    </section>
+
+    <section class="section3">
+        <div class=" mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8 h-[660px]">
+            <div >
+              <div class="max-w-lg md:max-w-none">
+                <p class="opacity-[80%] font-[Poppins] mb-4">
+                  OUR EXPERIENCE
+                </p>
+                <h1 class="font-[Poppins] text-[48px] mt-2 font-[600] leading-15">
+                  We want to get local identification in every corner of the world in this era of global citizenship
+                </h1>
+      
+                <p class="mt-4  opacity-[60%] font-[Poppins] text-[18px]">
+                  Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. 
+                </p>
+              </div>
+            </div>
+      
+            <div class="flex flex-col items-center h-[468px] justify-between w-[515px]">
+              <div class="w-4 h-4 bg-[#444CFC] place-self-start"> </div>
+              <div class="h-[80%] flex flex-col justify-between">
+                <div class="expertise flex w-[366px] h-[76px] gap-5">
+                  <img src="../images/expertise1.svg" class="w-[47px] h-[47px]" alt="">
+                  <div class="text">
+                    <h1 class="font-[Poppins] text-[16px] font-[600]">
+                      Web Design
+                    </h1>
+                    <p class="opacity-[60%] font-[Poppins] text-[16px] ">
+                      Through True Rich Attended does no end it his mother since real had half every him.
+                    </p>
+                  </div>
+                </div>
+    
+                <div class="expertise flex w-[366px] h-[76px] gap-5">
+                  <img src="../images/expertise2.svg" class="w-[47px] h-[47px]" alt="">
+                  <div class="text">
+                    <h1 class="font-[Poppins] text-[16px] font-[600]">
+                      Best Quality
+                    </h1>
+                    <p class="opacity-[60%] font-[Poppins] text-[16px] ">
+                      Through True Rich Attended does no end it his mother since real had half every him.
+                    </p>
+                  </div>
+                </div>
+    
+                <div class="expertise flex w-[366px] h-[76px] gap-5">
+                  <img src="../images/expertise3.svg" class="w-[47px] h-[47px]" alt="">
+                  <div class="text">
+                    <h1 class="font-[Poppins] text-[16px] font-[600]">
+                      Support Assist
+                    </h1>
+                    <p class="opacity-[60%] font-[Poppins] text-[16px] ">
+                      Through True Rich Attended does no end it his mother since real had half every him.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <img src="../images/expertise-image.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <section class="section4 bg-[#FFFF]">
+            <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8 ">
+                <div class="max-w-lg md:max-w-none mt-24 w-[50%]">
+                    <p class="opacity-[80%] font-[Poppins] text-black font-[600]">
+                        OUR VISION
+                    </p>
+                    <h1 class="font-[Poppins] text-[36px] font-[600] leading-15 mt-4 text-black">
+                        We want to get local identification in every corner of the world in this era of global citizenship.
+                    </h1>
+                    <p class="w-[95%] text-[15px] opacity-[60%]">Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. </p>
+                </div>
+                <div class="max-w-lg md:max-w-none mt-10">
+                    <img src="../images/company-image1.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="section5 bg-[#FFFF]">
+            <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8 ">
+                <div class="max-w-lg md:max-w-none mt-24 w-[50%]">
+                    <p class="opacity-[80%] font-[Poppins] text-black font-[600]">
+                        OUR VISION
+                    </p>
+                    <h1 class="font-[Poppins] text-[36px] font-[600] leading-15 mt-4 text-black">
+                        We want to get local identification in every corner of the world in this era of global citizenship.
+                    </h1>
+                    <p class="w-[95%] text-[15px] opacity-[60%]">Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. </p>
+                </div>
+                <div class="max-w-lg md:max-w-none mt-10 grid grid-cols-4">
+                    <img src="../images/character1.png" alt="">
+                    <img src="../images/character2.png" alt="">
+                    <img src="../images/charactor3.png" alt="">
+                    <img src="../images/character4.png" alt="">
+                    <img src="../images/character8.png" alt="">
+                    <img src="../images/character6.png" alt="">
+                    <img src="../images/character7.png" alt="">
+                    <img src="../images/character8.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="section6 mt-[-120px]">
+            <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+              <div class="grid grid-cols-2 items-center max-w-lg md:max-w-none mt-14 bg-[#666DFF]">
+                <div>
+                  <img src="../images/cornerShapes.svg" alt="">
+                  <div class="px-20 pb-10">
+                    <p class="text-white">NEWLETTER</p>
+                    <h2 class="text-[36px] font-[600] text-white mb-5">Subscribe our News Letter to get Latest Updates.</h2>
+                  </div>
+                </div>
+                <div class="items-center flex justify-center">
+                  <input type="email" placeholder="Paresh@Pixeto.com" class="w-[500px] px-6 bg-white py-4 border  border-transparent text-gray-700 focus:outline-none focus:border-blue-500">
+                </div>
+                <img class="absolute right-20 h-68" src="../images/stand-line.svg" alt="">
+              </div>
+            </div>
+          </section>
+
+          <footer class="bg-white font-[Poppins] w-full">
+            <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+              <div class="flex">
+                <div class="w-[50%]">
+                  <div class="text-teal-600">
+                    <img src="../images/corner1.svg" alt="">
+                  </div>
+                  <h1 class="text-[48px] font-[600] text-[#232536] mt-6 leading-14">Let's make something special</h1>
+                  <h2 class="mt-5 font-[600] text-[24px] text-[#232536]">Let's talk!🤙</h2>
+                  <div class="mt-5">
+                    <h1 class="text-[18px] font-[500] text-[#232536]">020 7993 2905</h1>
+                    <a href="mailto:info@pixeto.com" class="transition hover:opacity-75 text-[18px] font-[500] text-[#232536]">hi@weblover.com</a>
+                  </div>
+                  <div class="mt-5 w-[45%] text-[14px] font-[500] text-[#232536]">
+                    <p>DLF Cybercity, Bhubaneswar, India, &52050</p>
+                  </div>
+                </div>
+          
+                <div class="grid grid-cols-1 place-self-center gap-20 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4 mx-40 me-[-40px]">
+                  <div>
+                    <ul>
+                      <li>
+                        <a class="text-[#232536] transition hover:opacity-75 font-[600] text-[16px] cursor-pointer">Home</a>
+                      </li>
+                      <li class="mt-4">
+                        <a class="text-[#232536] transition hover:opacity-75 font-[600] text-[16px] cursor-pointer">Service</a>
+                      </li>
+                      <li class="mt-4">
+                        <a class="text-[#232536] transition hover:opacity-75 font-[600] text-[16px] cursor-pointer">Company</a>
+                      </li>
+                      <li class="mt-4">
+                        <a class="text-[#232536] transition hover:opacity-75 font-[600] text-[16px] cursor-pointer">Career</a>
+                      </li>
+                      <li class="mt-4">
+                        <a class="text-[#232536] transition hover:opacity-75 font-[600] text-[16px] cursor-pointer">News</a>
+                      </li>
+                      
+                    </ul>
+                    
+                  </div>
+          
+                  <div>
+                    <p class="text-[#232536] transition hover:opacity-75 font-[600] text-[16px] cursor-pointer">Service</p>
+          
+                    <ul class="space-y-4 text-sm">
+                      <li class="mt-2">
+                        <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> Technical support </a>
+                      </li>
+                      <li class="mt-2">
+                        <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]">Testing </a>
+                      </li>
+                      <li class="mt-2">
+                        <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> Development </a>
+                      </li>
+                      <li class="mt-2">
+                        <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> AWS/Azure </a>
+                      </li>
+                      <li class="mt-2">
+                        <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> Consulting </a>
+                      </li>
+                      <li class="absolute">
+                        <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> Information Technology </a>
+                      </li>
+                    </ul>
+                  </div>
+          
+                  <div>
+                    <p class="text-[#232536] transition hover:opacity-75 font-[600] text-[16px] cursor-pointer">Resources</p>
+          
+                    <ul class="space-y-4 text-sm">
+                      <li class="mt-2">
+                        <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> About Us </a>
+                      </li>
+          
+                      <li class="mt-2">
+                        <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]5"> Testimonial </a>
+                      </li>
+          
+                      <li class="mt-2">
+                        <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> Privacy Policy </a>
+                      </li>
+                      <li class="mt-2">
+                        <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> Terms of use </a>
+                      </li>
+                      <li class="mt-2">
+                        <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> Blog </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="absolute right-[90px] items-center mt-72">
+                    <img class="inline-block me-3" src="../images/endItem.svg" alt=""><a class="font-[Poppins] text-[18px] text-[#444CFC]" href="">Read More</a> <img class="inline-block" src="../images/Arrow-right-icon.svg" alt="">
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </footer>
+      
+          <footer class="bg-[#FFE6D2] w-full font-[Poppins]">
+            <div class="mx-auto max-w-screen-xl px-2 py-4 sm:px-6 lg:px-8">
+              <div class="flex items-center justify-between">
+                <div class="flex gap-7">
+                  <a href="#">
+                    <img class="w-auto h-6 sm:h-6" src="/images/Logo.png" alt="">
+                  </a>
+                  <p class="text-black text[16px] font-[600]">&copy;2021 Finsweet</p>
+                </div>
+                <div class="gap-6 flex">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+            </div>
+          </footer><footer class="bg-white font-[Poppins] w-full">
+      <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+        <div class="flex">
+          <div class="w-[50%]">
+            <div class="text-teal-600">
+              <img src="../images/corner1.svg" alt="">
+            </div>
+            <h1 class="text-[48px] font-[600] text-[#232536] mt-6 leading-14">Let's make something special</h1>
+            <h2 class="mt-5 font-[600] text-[24px] text-[#232536]">Let's talk!🤙</h2>
+            <div class="mt-5">
+              <h1 class="text-[18px] font-[500] text-[#232536]">020 7993 2905</h1>
+              <a href="mailto:info@pixeto.com" class="transition hover:opacity-75 text-[18px] font-[500] text-[#232536]">hi@weblover.com</a>
+            </div>
+            <div class="mt-5 w-[45%] text-[14px] font-[500] text-[#232536]">
+              <p>DLF Cybercity, Bhubaneswar, India, &52050</p>
+            </div>
+          </div>
+    
+          <div class="grid grid-cols-1 place-self-center gap-20 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4 mx-40 me-[-40px]">
+            <div>
+              <ul>
+                <li>
+                  <a class="text-[#232536] transition hover:opacity-75 font-[600] text-[16px] cursor-pointer">Home</a>
+                </li>
+                <li class="mt-4">
+                  <a class="text-[#232536] transition hover:opacity-75 font-[600] text-[16px] cursor-pointer">Service</a>
+                </li>
+                <li class="mt-4">
+                  <a class="text-[#232536] transition hover:opacity-75 font-[600] text-[16px] cursor-pointer">Company</a>
+                </li>
+                <li class="mt-4">
+                  <a class="text-[#232536] transition hover:opacity-75 font-[600] text-[16px] cursor-pointer">Career</a>
+                </li>
+                <li class="mt-4">
+                  <a class="text-[#232536] transition hover:opacity-75 font-[600] text-[16px] cursor-pointer">News</a>
+                </li>
+                
+              </ul>
+              
+            </div>
+    
+            <div>
+              <p class="text-[#232536] transition hover:opacity-75 font-[600] text-[16px] cursor-pointer">Service</p>
+    
+              <ul class="space-y-4 text-sm">
+                <li class="mt-2">
+                  <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> Technical support </a>
+                </li>
+                <li class="mt-2">
+                  <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]">Testing </a>
+                </li>
+                <li class="mt-2">
+                  <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> Development </a>
+                </li>
+                <li class="mt-2">
+                  <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> AWS/Azure </a>
+                </li>
+                <li class="mt-2">
+                  <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> Consulting </a>
+                </li>
+                <li class="absolute">
+                  <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> Information Technology </a>
+                </li>
+              </ul>
+            </div>
+    
+            <div>
+              <p class="text-[#232536] transition hover:opacity-75 font-[600] text-[16px] cursor-pointer">Resources</p>
+    
+              <ul class="space-y-4 text-sm">
+                <li class="mt-2">
+                  <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> About Us </a>
+                </li>
+    
+                <li class="mt-2">
+                  <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]5"> Testimonial </a>
+                </li>
+    
+                <li class="mt-2">
+                  <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> Privacy Policy </a>
+                </li>
+                <li class="mt-2">
+                  <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> Terms of use </a>
+                </li>
+                <li class="mt-2">
+                  <a href="#" class="font-[500] text-[#232536] transition hover:opacity-75 text-[14px]"> Blog </a>
+                </li>
+              </ul>
+            </div>
+            <div class="absolute right-[90px] items-center mt-72">
+              <img class="inline-block me-3" src="../images/endItem.svg" alt=""><a class="font-[Poppins] text-[18px] text-[#444CFC]" href="">Read More</a> <img class="inline-block" src="../images/Arrow-right-icon.svg" alt="">
+            </div>
+          </div>
+        </div> 
+      </div>
+    </footer>
+
+    <footer class="bg-[#FFE6D2] w-full font-[Poppins]">
+      <div class="mx-auto max-w-screen-xl px-2 py-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between">
+          <div class="flex gap-7">
+            <a href="#">
+              <img class="w-auto h-6 sm:h-6" src="/images/Logo.png" alt="">
+            </a>
+            <p class="text-black text[16px] font-[600]">&copy;2021 Finsweet</p>
+          </div>
+          <div class="gap-6 flex">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+      </div>
+      </div>
+    </footer>
+</body>
+</html>
